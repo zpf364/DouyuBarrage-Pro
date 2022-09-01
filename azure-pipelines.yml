@@ -12,6 +12,12 @@ pool:
 stages:
 - stage: AStage
   jobs:
+  - job: aaaa
+    steps:
+    - task: ShellScript@2
+      inputs:
+        scriptPath: 'echo'
+        args: 'helloworld'
   - job : A
     steps:
     - task: Maven@3
