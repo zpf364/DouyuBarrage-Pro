@@ -44,6 +44,3 @@ stages:
   - job: CC
     steps:
       - task: Gradle@3
-      - task: Delay@1
-        inputs:
-          delayForMinutes: '5'
